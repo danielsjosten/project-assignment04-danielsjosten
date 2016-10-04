@@ -15,7 +15,7 @@ public class Main {
 
 	/**
 	 * @param args 
-	 * This is the main method of the bankprogram that lets you create an account or several and deposit/withdraw money from/to it.
+	 * This is the main method of the bank program that lets you create an account or several and deposit/withdraw money from/to it.
 	 * 
 	 */
 	public static void main(String[] args) {

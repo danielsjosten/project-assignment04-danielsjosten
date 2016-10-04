@@ -24,7 +24,7 @@ public class BankCustomer extends Human {
 	}
 
 	/**
-	 * @param bankAccount adds a bankaccount to a customer
+	 * @param bankAccount adds a bank account to a customer
 	 */
 	public void addAccount(BankAccount bankAccount) {
 		customerAccounts.add(bankAccount);
@@ -48,7 +48,7 @@ public class BankCustomer extends Human {
 	}
 
 	/**
-	 * This metod makes an withdrawal from an account
+	 * This method makes an withdrawal from an account
 	 * 
 	 * @param accountNumber specifies from witch account the withdrawal is from
 	 * @param amount specifies the amount to withdraw
@@ -66,7 +66,7 @@ public class BankCustomer extends Human {
 	 */
 	@Override
 	public String toString() {
-
+		//Creating a 'formatedString' to remove the brackets around the arraylist when printing it.
 		String formatedString = customerAccounts.toString().replace("[", "").replace("]", "");
 		return "Customer: " + getName() + ", Age: " + getAge() + "\n" + formatedString;
 
@@ -74,14 +74,14 @@ public class BankCustomer extends Human {
 
 	// Get and set
 	/**
-	 * @return customerAccounts gets customerAccounts
+	 * @return customerAccounts method that gets customerAccounts
 	 */
 	public ArrayList<BankAccount> getCustomerAccounts() {
 		return customerAccounts;
 	}
 
 	/**
-	 * @param customerAccounts sets customerAccounts
+	 * @param customerAccounts method that sets customerAccounts
 	 */
 	public void setCustomerAccounts(ArrayList<BankAccount> customerAccounts) {
 		this.customerAccounts = customerAccounts;
